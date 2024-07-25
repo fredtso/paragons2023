@@ -17,8 +17,20 @@
   border: 5px solid #fff;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
   border-radius: 10px;
-		  animation: rotateGlow 5s linear infinite;}
-
+		  animation: rotateGlow 5s linear infinite;
+		animation: zoom-in 3s ease-in-out;
+  transform: scale(1);
+  transition: transform 3s ease-in-out;}
+  
+@keyframes zoom-in {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+  
 @keyframes rotateGlow {
   0% {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
