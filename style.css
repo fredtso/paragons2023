@@ -8,15 +8,15 @@
 			height: 100px;
 			margin: 10px;
 			border: 1px solid #333333; margin-bottom:10px; border-radius:10px;
-  animation: rotateX 10s linear infinite;
+  animation: rotateY 10s linear infinite;
 }
 
-@keyframes rotateX {
+@keyframes rotateY{
   0% {
-    transform: rotateX(0deg);
+    transform: rotateY(0deg);
   }
   100% {
-    transform: rotateX(360deg);
+    transform: rotateY(360deg);
   }
 }
 		}
