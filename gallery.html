@@ -1,80 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Gallery</title>
-  <meta name="viewport" content="widtg=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-	<style>
-		.gallery {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-		}
-		.gallery img {
-			width: 300px;
-			height: 400px;
-			margin: 10px;
-  border: 5px solid #fff;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-  border-radius: 10px;
-		  animation: rotateGlow 5s linear infinite;
-		animation: zoom-in 3s ease-in-out;
-  transform: scale(1);
-  transition: transform 3s ease-in-out;}
-  
-@keyframes zoom-in {
-  0% {
-    transform: scale(0.5);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-  
-@keyframes rotateGlow {
-  0% {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-  }
-  50% {
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
-  }
-  100% {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-  }
-}
-}
-  h1{text-align:center; font-size:50px;}
-  .gallery2{display:flex; flex-wrap:wrap; justify-content:center}
-  allery2 img{margin:10px; height:250px; width:300px; border:1px solid #ddd;}
-  
-	</style>
+	<link rel="stylesheet" href="styles.css">
+	
 </head>
+
 <body>
-	<h1>
-	  <span class="g">G</span>
-	  <span class="a">A</span>
-	  <span class="l1">L</span>
-	  <span class="l2">L</span>
-	  <span class="e">E</span>
-	  <span class="r">R</span>
-	  <span class="y">Y</span>
-	</h1>
-  <div class="club-badge">
-    <img src="IMG-20240725-WA0030.jpg">
-  </div>
-	<div class="gallery">
-		<img class="logo" src="IMG_20240722_230913_052.jpg" alt="logo">
-		<img src="IMG-20240610-WA0098.jpg" alt="Image 2">
-		<img src="IMG-20240207-WA0042.jpg" alt="Image 3">
-	  <img src="edelbert.jpg" alt="edelbert">
-	  <img src="hasanat.jpg" alt="hasanat">
-	  <img src="IMG-20240724-WA0086.jpg" alt="a blink">
-	  <img src="carbonate.jpg" alt="carbonate" loading="lazy">
+	<nav class="nav-bar">
+
+	</nav>
+<div class="main-div">
+	<div class="left-div">
+<p class="text">PARAGONS<br> 2023</p>
+<P class="smaller-text">New Gallery</P>
 	</div>
-  <div class="gallery2">
-	  <img src="blink.jpg" alt="blink">
-	  <img src="brief.jpg" alt="brief">
+	<div class="right-div">
+		<div class="right-div-a">
+			<div class="right-div-a-1 zoom-effect">
+
+			</div>
+			<div class="right-div-a-2 zoom-effect">
+
+			</div>
+		</div>
+		<div class="right-div-b">
+			<div class="right-div-b-1 zoom-effect">
+
+			</div>
+			<div class="right-div-b-2 zoom-effect">
+
+			</div>
+		</div>
+		<div class="right-div-c zoom-effect">
+
+		</div>	
 	</div>
+</div>	
 </body>
 </html>
 
