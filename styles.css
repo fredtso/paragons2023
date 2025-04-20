@@ -3,7 +3,8 @@ body{margin:0;
   background:linear-gradient(to right, rgba(0, 0, 200, 0.5), rgba(0, 0, 0 ,0)), url('background-image.jpg'); background-position: center;
 background-size: cover; background-repeat: no-repeat;}
 
-.main-div{display:flex; justify-content: space-evenly; align-items: center;}
+.main-div{display:flex; justify-content: space-evenly; 
+  align-items: center;}
 
 /*CSS FOR THE LEFT DIV*/
 
@@ -69,7 +70,7 @@ background-repeat: no-repeat; border:2px solid #87ca0f; border-radius: 5%;}
 /*CSS FOR THE ZOOM EFFECT*/
 .zoom-effect{transition: transform 0.9s ease-in-out;}
 
-.zoom-effect:hover{transform: scale(1.5);}
+.zoom-effect:hover{transform: scale(1.2);}
 
 /*CSS FOR THE PARAGONS TEXT*/
 .text{font-size: 4rem; 
@@ -79,3 +80,61 @@ text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff00de,
 0 0 40px #ff00de; 
 animation: flicker 1.5s infinite alternate;}
 @keyframes flicker{0%, 19%, 21%, 100%{opacity: 1;} 20%{opacity: 0.8;}}
+
+/*CSS FOR THE HORIZONTAL DIVIDER*/
+
+hr{margin-top: 12%; height: 4px; border: 1px transparent; 
+background: linear-gradient(90deg, #fff, #000, #fff);}
+
+/*TIME TO STYLE THE LOWER DIV WITH SEVEN KIDS*/
+
+.lower-div{height:80vh; width: 100%; background:url('IMG-20240610-WA0098.jpg');
+  background-position: center; background-size:100% 100% ;
+  background-repeat: no-repeat;
+   display: flex; justify-content: space-between;
+  }
+
+.small-div-with-video{position: relative; width:30%; overflow: hidden; }
+
+.small-div-with-video video{ z-index:-1; width: auto; height: auto;
+  object-fit: cover;
+
+  }
+
+.bigger-right-div{width:65%; height: 100%; display: flex; 
+  align-items: center; flex-direction: column;
+   justify-content: space-around;}
+
+   /*CSS FOR THE TOP RGHT DIV AND ALL HER KIDS*/
+
+.top-div{height: 49%; width: 100%;
+display: flex; justify-content: space-between;}
+
+.top-div-1{height: 100%; width: 33%; background:url('carbonate.jpg');
+  background-position: center; background-size: contain; background-repeat: no-repeat;
+border-radius: 12%;}
+
+.top-div-2{height: 100%; width: 33%;
+   background: url('IMG-20240725-WA0030.jpg');
+   background-position: center; background-size: cover;
+border-radius: 50%;}
+
+.top-div-3{height: 100%; width:33%; background: url('IMG-20240724-WA0086.jpg');
+  background-position: center; background-size: contain; background-repeat: no-repeat;
+border-radius: 12%;}
+
+/*CSS FOR THE BOTTOM RIGHT DIV AND ALL HER KIDS*/
+
+.bottom-div{height: 49%; width: 100%;
+display: flex; justify-content: space-around;}
+
+.bottom-div-1{height: 100%; width: 40%; background: url('brief.jpg');
+ background-position: center; background-size: cover; background-repeat: no-repeat;}
+
+
+.bottom-div-2{height: 100%; width: 29%; background: url('IMG-20240207-WA0042.jpg');
+  background-position: center; background-size: contain; background-repeat: no-repeat;}
+
+
+.bottom-div-3{height: 100%; width: 20%; background: url('tiktok.jpg');
+background-position: center; background-size: cover; background-repeat: no-repeat;}
