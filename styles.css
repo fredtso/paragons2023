@@ -1,7 +1,8 @@
 body{margin:0; 
   height: 100vh;
   background:linear-gradient(to right, rgba(0, 0, 200, 0.5), rgba(0, 0, 0 ,0)), url('background-image.jpg'); background-position: center;
-background-size: cover; background-repeat: no-repeat;}
+background-size: cover; background-repeat: no-repeat;
+padding-bottom: 600px;}
 
 .main-div{display:flex; justify-content: space-evenly; 
   align-items: center;}
@@ -96,8 +97,8 @@ background: linear-gradient(90deg, #fff, #000, #fff);}
 
 .small-div-with-video{position: relative; width:30%; overflow: hidden; }
 
-.small-div-with-video video{ z-index:-1; width: auto; height: auto;
-  object-fit: cover;
+.small-div-with-video video{ z-index:-1; width: 100%; height: 100%;
+  object-fit: contain; position: relative;
 
   }
 
@@ -128,13 +129,13 @@ border-radius: 12%;}
 .bottom-div{height: 49%; width: 100%;
 display: flex; justify-content: space-around;}
 
-.bottom-div-1{height: 100%; width: 40%; background: url('brief.jpg');
+.bottom-div-1{height: 100%; width: 42%; background: url('brief.jpg');
  background-position: center; background-size: cover; background-repeat: no-repeat;}
 
 
-.bottom-div-2{height: 100%; width: 29%; background: url('IMG-20240207-WA0042.jpg');
+.bottom-div-2{height: 100%; width: 35%; background: url('IMG-20240207-WA0042.jpg');
   background-position: center; background-size: contain; background-repeat: no-repeat;}
 
 
-.bottom-div-3{height: 100%; width: 20%; background: url('tiktok.jpg');
+.bottom-div-3{height: 100%; width: 22%; background: url('tiktok.jpg');
 background-position: center; background-size: cover; background-repeat: no-repeat;}
