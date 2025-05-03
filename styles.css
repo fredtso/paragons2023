@@ -98,7 +98,7 @@ background: linear-gradient(90deg, #fff, #000, #fff);}
 .small-div-with-video{position: relative; width:30%; overflow: hidden; }
 
 .small-div-with-video video{ z-index:-1; width: 100%; height: 100%;
-  object-fit: contain; position: relative;
+  object-fit: cover;
 
   }
 
@@ -139,3 +139,250 @@ display: flex; justify-content: space-around;}
 
 .bottom-div-3{height: 100%; width: 22%; background: url('tiktok.jpg');
 background-position: center; background-size: cover; background-repeat: no-repeat;}
+
+
+/*CSS FOR THE NEW INDEX FILE*/
+
+
+
+/* GENERAL PAGE STYLE */
+:root {
+  --crimson: #A51C30;
+  --navy: #012169;
+  --gold: #FFD700;
+  --cream: #F9F6EE;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', sans-serif;
+  background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+  background-attachment: fixed;
+  color: #333;
+}
+h1{
+  font-size: 2.5rem;
+  text-align: center;
+  MARGIN: 10px 0;
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+}
+}
+h1,h2,h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.subtitle {
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+/* HEADER AND NAVIGATION */
+header {
+  background-color: #003366;
+  color: white;
+  padding-bottom: 20px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  background-color: #002244;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #66a6ff;
+}
+
+/* MAIN TITLE */
+h1 {
+  margin-top: 20px;
+  font-size: 40px;
+}
+
+/* SEARCH BAR */
+#searchInput {
+  margin-top: 15px;
+  padding: 12px 20px;
+  width: 60%;
+  max-width: 500px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+#searchInput:focus {
+  box-shadow: 0px 0px 10px #66a6ff;
+}
+
+/* CARD CONTAINER */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* CARD STYLE */
+.card {
+  width: 250px;
+  height: 350px;
+  margin: 20px;
+  perspective: 1000px;
+  border-radius: 15px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  border: 2px solid #ffffff33; /*white with a slice transparency */
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur (10px);
+  transition: transform  0.3s ease,box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
+}
+
+.inner-card {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.card:hover .inner-card {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.font {
+  background: white;
+}
+.front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.back {
+  background: #003366;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.back h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.back p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* SOCIAL BUTTONS */
+.social-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25D366;
+  padding: 10px 15px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.social-link i {
+  margin-right: 8px;
+}
+
+.social-link.whatsapp {
+  background-color: #25D366;
+}
+
+.social-link.whatsapp:hover {
+  background-color: #128C7E;
+}
+
+.social-link.instagram {
+  background-color: #E1306C;
+}
+
+.social-link.instagram:hover {
+  background-color: #C13584;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+  }
+  nav ul {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+  }
+  #searchInput {
+      width: 80%;
+  }
+}
