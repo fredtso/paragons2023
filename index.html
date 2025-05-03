@@ -17,7 +17,7 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="https://fredtso.github.io/paragons2023/gallery.html">Gallery</a></li>
                     <li><a href="#" id="registerLink">Register</a></li>
                 </ul>  
             </nav>  
@@ -110,7 +110,7 @@
         <div class="card" data-name="Ederbert">
             <div class="inner-card">
                 <div class="front">
-                    <img src="photos/Ederbert.jpg" alt="Ederbert">
+                    <img src="photos/eddy.jpg" alt="Ederbert">
                 </div>
                 <div class="back">
                     <h3>Ederbert</h3>
@@ -131,7 +131,7 @@
         <div class="card" data-name="Comfort Icom">
             <div class="inner-card">
                 <div class="front">
-                    <img src="photos/ComfortIcom.jpg" alt="Comfort Icom">
+                    <img src="photos/Comfort-Icom.jpg" alt="Comfort Icom">
                 </div>
                 <div class="back">
                     <h3>Comfort Icom</h3>
@@ -312,10 +312,10 @@
         <div class="card" data-name="SHELIA">
             <div class="inner-card">
                 <div class="front">
-                    <img src="photos/shelia.jpg" alt="SHELIA">
+                    <img src="photos/sheila.jpg" alt="SHEILA">
                 </div>
                 <div class="back">
-                    <h3>SHELIA</h3>
+                    <h3>SHEILA</h3>
                     <p>Hobbies:Singing and reading</p>
                     <div class="social-buttons">
                         <a href="https://wa.me/256789462955" target="_blank" class="social-link whatsapp">
@@ -328,6 +328,47 @@
                 </div>
             </div>
         </div>    
+
+        <div class="card" data-name="OWINY">
+            <div class="inner-card">
+                <div class="front">
+                    <img src="photos/owiny.jpg" alt="R2710">
+                </div>
+                <div class="back">
+                    <h3>OWINY R2710</h3>
+                    <p>Hobbies:Singing and reading</p>
+                    <div class="social-buttons">
+                        <a href="https://wa.me/" target="_blank" class="social-link whatsapp">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                        <a href="https://instagram.com/username" target="_blank" class="social-link instagram">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        
+        <div class="card" data-name="JUDITH">
+            <div class="inner-card">
+                <div class="front">
+                    <img src="photos/judith.jpg" alt="JUDITH">
+                </div>
+                <div class="back">
+                    <h3>JUDITH</h3>
+                    <p>Hobbies:Singing and reading</p>
+                    <div class="social-buttons">
+                        <a href="https://wa.me/" target="_blank" class="social-link whatsapp">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                        <a href="https://instagram.com/username" target="_blank" class="social-link instagram">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>    
+
         <div id="profileCardsContainer"></div>
          <div id="profileForm" style="display: none;">
             <h2>Update Your Profile</h2>
@@ -342,7 +383,9 @@
         </div>    
     </div>
     <script>
+
         // Function to handle the register link click
+
        document.getElementById('registerLink').addEventListener('click', function() {
             document.getElementById('profileForm').style.display = 'block';
             //scroll 
@@ -351,6 +394,7 @@
 
  
         // Function to search cards by name
+
        function searchCards() {
             let input = document.getElementById('searchInput').value.toLowerCase();
             let cards = document.querySelectorAll('.card');
@@ -368,6 +412,7 @@
                 card.classList.remove('animate__pulse');
             });
         });
+
         // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
