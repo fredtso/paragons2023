@@ -35,12 +35,12 @@ align-items: center; }
   }
 
 .right-div-a-1{width: 100%; height: 35%; 
-  background: url('blink.jpg'); border-radius: 9%; 
+  background: url('photos/blink.jpg'); border-radius: 9%; 
 background-size: cover; background-position: center;
 border:2px solid #87cefa} 
 
 .right-div-a-2{width: 100%; height: 35%;
-   background: url('jersey.jpg'); border-radius: 9%;
+   background: url('photos/jersey.jpg'); border-radius: 9%;
    background-size: 100% 100%; background-position: center;
    border:2px solid #87cefa}
 
@@ -49,7 +49,7 @@ border:2px solid #87cefa}
 .right-div-b{width:30%; height: 100%; 
 display: flex; flex-direction: column; gap: 20px;}
 
-.right-div-b-1{width: 100%; height: 49%; background: url('trophy_with_ball.jpg');
+.right-div-b-1{width: 100%; height: 49%; background: url('photos/trophy_with_ball.jpg');
 border-radius: 5%;
 background-size: cover; background-position: center;
 background-repeat: no-repeat; border:2px solid #e412f77e;
@@ -57,14 +57,14 @@ transition: transform 0.9s ease-in-out;}
 
 .right-div-b-1:hover{transform: scale(1.3);}
 
-.right-div-b-2{width: 100%; height: 48%; background: url('trophy_with_medal.jpg');
+.right-div-b-2{width: 100%; height: 48%; background: url('photos/trophy_with_medal.jpg');
 border-radius: 5%;
 background-size: cover; background-position: center; 
 background-repeat: no-repeat; border:2px solid #f0f;}
 
 /*CSS FOR THE THIRD RIGHT DIV AND HER ONE KID*/
 
-.right-div-c{width: 30%; height: 89%; background:url('tropy_alone.jpg');
+.right-div-c{width: 30%; height: 89%; background:url('photos/tropy_alone.jpg');
 background-size: cover; background-position: center;
 background-repeat: no-repeat; border:2px solid #87ca0f; border-radius: 5%;}
 
@@ -89,7 +89,7 @@ background: linear-gradient(90deg, #fff, #000, #fff);}
 
 /*TIME TO STYLE THE LOWER DIV WITH SEVEN KIDS*/
 
-.lower-div{height:80vh; width: 100%; background:url('IMG-20240610-WA0098.jpg');
+.lower-div{height:80vh; width: 100%; background:url('photos/IMG-20240610-WA0098.jpg');
   background-position: center; background-size:100% 100% ;
   background-repeat: no-repeat;
    display: flex; justify-content: space-between;
@@ -111,7 +111,7 @@ background: linear-gradient(90deg, #fff, #000, #fff);}
 .top-div{height: 49%; width: 100%;
 display: flex; justify-content: space-between;}
 
-.top-div-1{height: 100%; width: 33%; background:url('carbonate.jpg');
+.top-div-1{height: 100%; width: 33%; background:url('photos/carbonate.jpg');
   background-position: center; background-size: contain; background-repeat: no-repeat;
 border-radius: 12%;}
 
@@ -120,7 +120,7 @@ border-radius: 12%;}
    background-position: center; background-size: cover;
 border-radius: 50%;}
 
-.top-div-3{height: 100%; width:33%; background: url('IMG-20240724-WA0086.jpg');
+.top-div-3{height: 100%; width:33%; background: url('photos/IMG-20240724-WA0086.jpg');
   background-position: center; background-size: contain; background-repeat: no-repeat;
 border-radius: 12%;}
 
@@ -129,11 +129,11 @@ border-radius: 12%;}
 .bottom-div{height: 49%; width: 100%;
 display: flex; justify-content: space-around;}
 
-.bottom-div-1{height: 100%; width: 42%; background: url('brief.jpg');
+.bottom-div-1{height: 100%; width: 42%; background: url('photos/brief.jpg');
  background-position: center; background-size: cover; background-repeat: no-repeat;}
 
 
-.bottom-div-2{height: 100%; width: 35%; background: url('IMG-20240207-WA0042.jpg');
+.bottom-div-2{height: 100%; width: 35%; background: url('photos/IMG-20240207-WA0042.jpg');
   background-position: center; background-size: contain; background-repeat: no-repeat;}
 
 
