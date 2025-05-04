@@ -146,6 +146,171 @@ display: flex; justify-content: space-around;}
 background-position: center; background-size: cover; background-repeat: no-repeat;}
 
 
+/*                                                      *\
+| CSS FOR THE MOBILE EXPRIENCE OF THE PARAGONS GALLERY    |
+\*                                                      */
+
+@media(max-width:680px){
+  .main-div{display:flex; justify-content: space-evenly; 
+    align-items: center; flex-direction: column;}
+  
+  /*CSS FOR THE LEFT DIV ON A SMALLER SCREEN*/
+  
+  .left-div{width:95VW; height:10vh;
+  border:none; position:relative;
+  padding-bottom: 2%; 
+  margin-bottom: 1%; 
+  overflow: hidden; 
+  display: flex;
+  justify-content: space-around;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px); 
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1),
+   inset 0 0 20px rgba(255, 255, 255, 0.2), 0 0 0 1px rgba(255, 255, 255, 0.1);
+  }
+
+  /*CSS FOR THE PARAGONS TEXT ON A SMALLER SCREEN OF COURSE*/
+.text{font-size:25px; 
+  font-weight: bold;
+  font-style:normal;
+text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 10px #ff00de,
+0 0 10px #ff00de; 
+animation: flicker 1.5s infinite alternate;}
+@keyframes flicker{0%, 19%, 21%, 100%{opacity: 1;} 20%{opacity: 0.8;}}
+
+.smaller-text{font-size:20px; 
+  font-weight: bold;
+  font-style:normal;
+text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 10px #ff00de,
+0 0 10px #ff00de; 
+animation: flicker 1.5s infinite alternate;}
+@keyframes flicker{0%, 19%, 21%, 100%{opacity: 1;} 20%{opacity: 0.8;}}
+
+/*STYLNG RIGHT HAND SIDE FOR SMALLER SCREENS */
+
+.right-div{width:95vw; height:98em;
+  position:relative; top:10vh;
+ display:flex; justify-content: space-evenly;
+ flex-direction: column;
+ align-items: center; }
+ 
+ /*CSS FOR THE FIRST RIGHT DIV CHILDREN*/
+ 
+ .right-div-a{width:99%; height: 15%; 
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+   }
+ 
+ .right-div-a-1{width: 100%; height: 100%; 
+   background: url('photos/blink.jpg');
+    border-radius: 9%; 
+ background-size: cover; 
+ background-position: center;
+ border:2px solid #87cefa} 
+ 
+ .right-div-a-2{width: 100%; height: 100%;
+    background: url('photos/DISMAS.jpg'); border-radius: 9%;
+    background-size: 100% 100%; background-position: center;
+    border:2px solid #87cefa}
+
+/*CSS FOR THE SECOND RIGHT DIV AND HER KIDS FOR SMALLER SCREENS*/
+
+.right-div-b{width:99%; height: 30%; 
+  display: flex; flex-direction: row; gap: 20px;
+margin-bottom: 20px;}
+  
+  .right-div-b-1{width: 100%; height: 100%; background: url('photos/hasanat.jpg');
+  border-radius: 5%;
+  background-size: cover; background-position: center;
+  background-repeat: no-repeat; border:2px solid #e412f77e;
+  transition: transform 0.9s ease-in-out;}
+  
+  .right-div-b-1:hover{transform: scale(1.3);}
+  
+  .right-div-b-2{width: 100%; height: 100%; 
+    background: url('photos/trophy_with_medal.jpg');
+  border-radius: 5%;
+  background-size: cover; background-position: center; 
+  background-repeat: no-repeat; border:2px solid #f0f;}
+  
+  /*CSS FOR THE THIRD RIGHT DIV AND HER ONE KID ON SMALLER SCREENS*/
+  
+  .right-div-c{width: 99%; height: 28%; background:url('photos/owiny.jpg');
+  background-size: cover; background-position: center;
+  background-repeat: no-repeat; border:2px solid #87ca0f; border-radius: 5%;}
+  
+
+/*TIME TO STYLE THE LOWER DIV WITH SEVEN KIDS TO ALIGN PERFECTLY ON SMALLER SCREENS*/
+
+
+.lower-div{height:100vh; width: 100%; /*background:url('photos/group_photo_1.jpg');*/
+  background-position: center; background-size:100% 100% ;
+  background-repeat: no-repeat;
+   display: flex; 
+   justify-content: space-around;
+   flex-direction: column;
+  }
+
+.small-div-with-video{position: relative; width:98%; 
+  overflow: hidden; 
+margin-bottom: 10px;}
+
+.small-div-with-video video{ z-index:-1; width: 100%; height: 100%;
+  object-fit: cover;
+
+  }
+
+.bigger-right-div{width:98vw; height: 100%; display: flex; 
+  align-items: center; 
+  flex-direction: column;
+   justify-content: space-around;}
+
+   /*CSS FOR THE TOP RGHT DIV AND ALL HER KIDS ON SMALLER SCREENS*/
+
+.top-div{height: 100%; width: 100%;
+display: flex; 
+flex-direction: column;
+justify-content: space-around;
+margin-bottom: 20px;}
+
+.top-div-1{height: 100%;
+   width: 100%; background:url('photos/group.jpg');
+  background-position: center; background-size: cover; background-repeat: no-repeat;
+}
+
+.top-div-2{height: 100%; width: 100%;
+  background: url('photos/group_photo_1.jpg');
+  background-position: center;
+   background-size: cover; background-repeat: no-repeat;
+}
+
+.top-div-3{height: 100%; width:100%; background: url('photos/group_photo_2.jpg');
+ background-position: center; 
+ background-size: cover; background-repeat: no-repeat;}
+
+/*CSS FOR THE BOTTOM RIGHT DIV AND ALL HER KIDS ON SMALLER SCREENS*/
+
+.bottom-div{height: 100vh; width: 100%;
+display: flex; justify-content: space-around; 
+margin-bottom: 20px;}
+
+.bottom-div-1{height: 100%; width: 49%; background: url('photos/zena.jpg');
+background-position: center; background-size: cover; background-repeat: no-repeat;}
+
+
+.bottom-div-2{height: 100%; width: 49%; background: url('photos/sheila.jpg');
+ background-position: center; background-size: cover; background-repeat: no-repeat;}
+
+
+.bottom-div-3{ height: 0%; width: 0%; background: url('tiktok.jpg');
+background-position: center; background-size: cover; background-repeat: no-repeat;}
+
+
+}
+
 /*CSS FOR THE NEW INDEX FILE*/
 
 
@@ -386,3 +551,59 @@ h1 {
       width: 80%;
   }
 }
+
+
+/*CSS FOR THE LOGIN FORM*/
+
+.major-div{width:100vw;
+height:100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.login-container{width:50vw; height:65vh;
+position:relative;
+display: flex;
+flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+  margin: 20px;
+  perspective: 1000px;
+  border-radius: 15px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  border: 3px solid #ffaffb33; /*white with a slice transparency */
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.login-text{font-size: 4rem; 
+  color:#434343;
+  font-weight: bold;
+  font-style: oblique;
+text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff00de,
+0 0 40px #ff00de; 
+animation: flicker 1.5s infinite alternate;}
+@keyframes flicker{0%, 19%, 21%, 100%{opacity: 1;} 20%{opacity: 0.8;}
+}
+
+input{display:block;
+width:100%;
+margin-top: 8px;
+margin-bottom: 25px;
+background: transparent;
+border:2px dotted rgb(155, 247, 17);
+}
+
+#login-button{background: none; 
+height: 15%;
+width: 100%;
+color: white;
+font-size:1em;
+}
+
+.sign-up{text-decoration: none;
+color:yellow;}
