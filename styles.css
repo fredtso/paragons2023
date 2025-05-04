@@ -246,24 +246,23 @@ margin-bottom: 20px;}
 /*TIME TO STYLE THE LOWER DIV WITH SEVEN KIDS TO ALIGN PERFECTLY ON SMALLER SCREENS*/
 
 
-.lower-div{height:100vh; width: 100%; /*background:url('photos/group_photo_1.jpg');*/
-  background-position: center; background-size:100% 100% ;
-  background-repeat: no-repeat;
+.lower-div{height:300vh; width: 100%;
    display: flex; 
    justify-content: space-around;
    flex-direction: column;
+   margin-top: 30px;
   }
 
 .small-div-with-video{position: relative; width:98%; 
-  overflow: hidden; 
-margin-bottom: 10px;}
+  overflow: hidden; height: 25%;
+margin-bottom: 10px; border-radius: 10%;}
 
-.small-div-with-video video{ z-index:-1; width: 100%; height: 100%;
+.small-div-with-video video{  width: 100%; height: 100%;
   object-fit: cover;
 
   }
 
-.bigger-right-div{width:98vw; height: 100%; display: flex; 
+.bigger-right-div{width:98vw; height: 90%; display: flex; 
   align-items: center; 
   flex-direction: column;
    justify-content: space-around;}
@@ -274,22 +273,26 @@ margin-bottom: 10px;}
 display: flex; 
 flex-direction: column;
 justify-content: space-around;
-margin-bottom: 20px;}
+margin-bottom: 20px; 
+margin-top: 20px;}
 
 .top-div-1{height: 100%;
    width: 100%; background:url('photos/group.jpg');
-  background-position: center; background-size: cover; background-repeat: no-repeat;
+  background-position: center; background-size: cover;
+  margin-top: 20px;
+  background-repeat: no-repeat;
 }
 
 .top-div-2{height: 100%; width: 100%;
   background: url('photos/group_photo_1.jpg');
   background-position: center;
-   background-size: cover; background-repeat: no-repeat;
+   background-size: cover; background-repeat: no-repeat; margin-top: 20px;
 }
 
 .top-div-3{height: 100%; width:100%; background: url('photos/group_photo_2.jpg');
  background-position: center; 
- background-size: cover; background-repeat: no-repeat;}
+ background-size: cover; background-repeat: no-repeat;
+margin-top: 20px;}
 
 /*CSS FOR THE BOTTOM RIGHT DIV AND ALL HER KIDS ON SMALLER SCREENS*/
 
@@ -297,16 +300,20 @@ margin-bottom: 20px;}
 display: flex; justify-content: space-around; 
 margin-bottom: 20px;}
 
-.bottom-div-1{height: 100%; width: 49%; background: url('photos/zena.jpg');
-background-position: center; background-size: cover; background-repeat: no-repeat;}
+.bottom-div-1{height: 70%; width: 49%; background: url('photos/zena.jpg');
+background-position: center; background-size: cover;
+ background-repeat: no-repeat; margin-top: 20px;}
 
 
-.bottom-div-2{height: 100%; width: 49%; background: url('photos/sheila.jpg');
- background-position: center; background-size: cover; background-repeat: no-repeat;}
+.bottom-div-2{height: 70%; width: 49%; background: url('photos/sheila.jpg');
+ background-position: center; background-size: cover;
+ margin-top: 20px; 
+ background-repeat: no-repeat;}
 
 
 .bottom-div-3{ height: 0%; width: 0%; background: url('tiktok.jpg');
-background-position: center; background-size: cover; background-repeat: no-repeat;}
+background-position: center; background-size: cover;
+ background-repeat: no-repeat; }
 
 
 }
