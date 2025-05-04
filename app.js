@@ -1,13 +1,10 @@
-// Firebase configuration (replace with your actual config)
-
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// web app Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyAz7mj7O99oDBKKj0-P9z_7WYYvhQzQgPM",
   authDomain: "paragons-d5d19.firebaseapp.com",
@@ -110,7 +107,7 @@ function handleProfileSubmit(e) {
         .then(() => {
             document.getElementById('profile-message').textContent = 'Profile saved successfully!';
             setTimeout(() => {
-                window.location.href = 'index.html';
+                window.location.href = 'register.html';
             }, 1500);
         })
         .catch(error => {
@@ -172,4 +169,6 @@ function createClassmateCard(data) {
         <div class="card-body">
             <p>${data.bio || 'No bio provided'}</p>
             <p><strong>Contact:</strong> ${data.contact || 'Not provided'}</p>
-        </
+            <p><strong>GitHub:</strong> <a href="${data.github || '#'}">${data.github || 'Not provided'}</a></p>
+            <p><strong>LinkedIn:</strong> <a href="${data.linkedin || '#'}">${data.linkedin || 'Not provided'}</a></p>
+            </div>
