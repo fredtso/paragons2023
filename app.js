@@ -155,20 +155,3 @@ function checkAuthAndLoadClassmates() {
             });
         });
 }
-
-// Create classmate card
-function createClassmateCard(data) {
-    const card = document.createElement('div');
-    card.className = 'classmate-card';
-    
-    card.innerHTML = `
-        <div class="card-header">
-            <img src="${data.photoUrl || 'https://via.placeholder.com/150'}" alt="${data.fullName}">
-            <h3>${data.fullName || 'Classmate'}</h3>
-        </div>
-        <div class="card-body">
-            <p>${data.bio || 'No bio provided'}</p>
-            <p><strong>Contact:</strong> ${data.contact || 'Not provided'}</p>
-            <p><strong>GitHub:</strong> <a href="${data.github || '#'}">${data.github || 'Not provided'}</a></p>
-            <p><strong>LinkedIn:</strong> <a href="${data.linkedin || '#'}">${data.linkedin || 'Not provided'}</a></p>
-            </div>
