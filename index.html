@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+    <script src="app.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PARAGONS 2017-2023</title>
@@ -373,129 +374,5 @@
             <p id="profileStatus"></p>
         </div>    
     </div>
-    <script>
-
-        // Function to handle the register link click
-
-       document.getElementById('registerLink').addEventListener('click', function() {
-            document.getElementById('profileForm').style.display = 'block';
-            //scroll 
-            document.getElementById('profileForm').scrollIntoView({ behavior: 'smooth' });
-        });
-
- 
-        // Function to search cards by name
-
-       function searchCards() {
-            let input = document.getElementById('searchInput').value.toLowerCase();
-            let cards = document.querySelectorAll('.card');
-            cards.forEach(card => {
-                let name = card.getAttribute('data-name').toLowerCase();
-                card.style.display = name.includes(input) ? 'block' : 'none';
-            });
-        }
-
-        document.querySelectorAll('.card').forEach(card => {
-            card.addEventListener('mouseenter', () => {
-                card.classList.add('animate__animated', 'animate__pulse');
-            });
-            card.addEventListener('mouseleave', () => {
-                card.classList.remove('animate__pulse');
-            });
-        });
-
-        // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyBFG079giO5cY3P3EuYgdf0OlWlBQ42H3I",
-  authDomain: "paragons-4f705.firebaseapp.com",
-  projectId: "paragons-4f705",
-  storageBucket: "paragons-4f705.firebasestorage.app",
-  messagingSenderId: "536780033764",
-  appId: "1:536780033764:web:118f43ebeb5d973c4966f1",
-  measurementId: "G-7LNV7MRC61"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-    </script>
-<script>
-// Updated Firebase-Integrated JavaScript to Handle Contact Cards
-</script>
-<script src="app.js"></script>
-<script>
-const db = firebase.firestore();
-
-function saveProfile() { 
-    const user = auth.currentUser; 
-    if (!user) { 
-        alert("You must be logged in."); 
-        return; 
-    }
-
-const name = document.getElementById("displayName").value;
- const hobbies = document.getElementById("hobbies").value; 
- const whatsapp = document.getElementById("whatsapp").value; 
- const instagram = document.getElementById("instagram").value; 
- const twitter = document.getElementById("twitter").value; 
- const file = document.getElementById("profileImage").files[0];
-
-const docRef = db.collection("profiles").doc(user.uid);
-
-if (file) {
-     const imageRef = storage.ref(`profilePics/${user.uid}`);
-     imageRef.put(file).then(snapshot => { 
-        snapshot.ref.getDownloadURL().then(url => { 
-            docRef.set({ name, hobbies, whatsapp, instagram, twitter, photoURL: url }); 
-            document.getElementById("profileStatus").textContent = "Profile updated."; 
-        }); 
-    });
- } else { 
-    docRef.set({ name, hobbies, whatsapp, instagram, twitter }, { merge: true }); 
-    document.getElementById("profileStatus").textContent = "Profile updated.";
- } 
-}
-
-function displayAllProfiles() { 
-    db.collection("profiles").onSnapshot(snapshot => { 
-        const container = document.getElementById("profileCardsContainer"); 
-        container.innerHTML = ""; 
-        snapshot.forEach(doc => 
-        { const data = doc.data(); 
-            const card = `
-            <div class="card" data-name="${data.name || 'Unnamed'}">
-                 <img src="${data.photoURL || 'https://via.placeholder.com/150'}" alt="${data.name || 'Profile'}"> 
-                 <h3>${data.name || 'Unnamed'}</h3> 
-                 <p>Hobbies: ${data.hobbies || 'Not specified'}</p> 
-                 <div class="social-buttons"> 
-                    <a href="https://wa.me/${data.whatsapp || ''}" target="_blank" class="social-link whatsapp"> 
-                        <i class="fab fa-whatsapp"></i> WhatsApp </a> 
-                        <a href="${data.instagram || '#'}" target="_blank" class="social-link instagram">
-                             <i class="fab fa-instagram"></i> Instagram </a> 
-                             <a href="${data.twitter || '#'}" target="_blank" class="social-link twitter"> 
-                                <i class="fab fa-twitter"></i> Twitter 
-                            </a> 
-                            </div>
-            </div>
-                         `;
-                          container.innerHTML += card;
-                           });
-                         });
-       }
-
-      auth.onAuthStateChanged(user => {
-     if (user) { 
-        document.getElementById("profileForm").style.display = "block"; 
-        displayAllProfiles(); 
-    } 
-});
-</script>
-</body>
-</html>
+    </body>
+  </html>
