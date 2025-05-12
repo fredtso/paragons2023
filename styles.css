@@ -671,14 +671,17 @@ justify-content: center;
 align-items: center;
 }
 
-.login-container{width:85vw; height:65vh;
+.login-container{width:min(85vw, 600px); height:min(65vh, 700px);
 position:fixed;
 display: flex;
 flex-direction: column;
   justify-content:space-around;
   align-items: center;
   margin: 20px;
-  perspective: 1000px;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  perspective:1000px;
   border-radius: 15px;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.1);
