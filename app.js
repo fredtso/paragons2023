@@ -21,6 +21,7 @@ const db = firebase.firestore();
 let loginForm, profileForm, authStatus, classmatesContainer;
 
 // Check which page we're on and initialize accordingly
+65
 document.addEventListener('DOMContentLoaded', function() {
     if (document.getElementById('login-form')) {
         // Login page
@@ -147,3 +148,10 @@ function checkAuthAndLoadClassmates() {
             });
         });
 }
+
+//JS FOR THE EYE ICON ON THE LOGIN PAGE
+const togglePassword = document.getElementById('togglePassword')
+const passwordInput = document.getElementById('password')
+togglePassword.addEventListener('click', function(){
+const type = passwordInput.getAttribute('type') === 'password' ? 'text':'password';
+passwordInput.setAttribute('type', type);});
