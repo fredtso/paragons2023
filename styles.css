@@ -500,22 +500,18 @@ color: white;
 }
 }
 h2,h3 {
-  margin-top: 20px;
+  margin-top: 10%;
   margin-bottom: 10px;
+  color: whitesmoke;
 }
 .subtitle {
   font-style: italic;
   margin-top: 0.5rem;
+  color: whitesmoke;
 }
 /* HEADER AND NAVIGATION */
 header {
-  background-color: #003366;
-  color: white;
   width: 100vw;
-  box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
-  position: fixed;
-  top: 0;
-  z-index: 1;
 }
 
 .navbar {
@@ -524,7 +520,9 @@ header {
   align-items: center;
   padding:4% 10%;
   background-color: #002244;
-  
+  position: sticky;
+  top: 0;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
 }
 
 .logo {
@@ -534,6 +532,10 @@ header {
   display: flex;
   justify-content: center;
   padding: 3%;
+  position: relative;
+  background-color: #003366;
+  color: white;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
 }
 
 nav ul {
@@ -561,7 +563,9 @@ h1 {
   margin-top: 20px;
   font-size:40px;}
 
-/* SEARCH BAR */
+/* SEARCH BAR STILL UNDER DEVELOPMENT*/
+/*
+
 #searchInput {
   margin-top: 15px;
   padding: 12px 20px;
@@ -577,6 +581,8 @@ h1 {
 #searchInput:focus {
   box-shadow: 0px 0px 10px #66a6ff;
 }
+
+*/
 
 /* CARD CONTAINER */
 .container {
@@ -783,4 +789,24 @@ font-size:1em;
 .sign-up, .back-to-home{text-decoration: none;
 color:yellow;}
 
-.back-to-home{background: none; text-decoration: none;}
+.back-to-top{ 
+
+color: white;
+height: 30px;
+width: 30px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+position: fixed;
+bottom: 4%;
+right: 0;
+background: rgba(100, 100, 255, 0.1);
+  backdrop-filter: blur(-2px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  border: 3px solid #ffaffb33; /*white with a slice transparency */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+
+}
+.T{color: white;
+text-decoration: none;}

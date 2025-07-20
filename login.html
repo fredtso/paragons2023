@@ -1,46 +1,27 @@
 <!DOCTYPE html>
-
 <html lang="en">
-<head>
-
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>login</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Paragons</title>
+  </head>
+  <body>
+    <header>
+        
+        <div class="navbar">
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="https://docs.google.com/spreadsheets/d/1TPtgWcJOjC-XCXqx5hpIDxt9SGIRr52Mo_-4UTvElL0/edit?usp=sharing" id="login">Contacts</a></li>
+                </ul>  
+            </nav>  
+        </div>
     
-  <link rel="stylesheet" href="styles.css">
-
-        <!-- Add Firebase SDKs -->
-
-  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
-
-  <script src="app.js"></script>
-
-</head>
-<body>
-  <div class="major-div">
-    <form id="login-form">
-      <div class="login-container">
-          <h2 class="login-text">LOGIN</h2>
-          <form id="login-form">
-              <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" required placeholder="enter your fucking email">
-              </div>
-              <div class="form-group">
-                  <label for="password">Password</label>
-                  <input type="password" id="password" required minlength="8" >
-                  <button type="button" id="togglePassword">👁️</button>
-              </div>
-              <button type="submit" id="login-button">Login</button>
-          </form>
-          <p id="login-message">No account?😒<br><a class="sign-up" href="register.html">sign up</a></p>
-          <p ><a class="back-to-home" href="index.html">Back to Home</a></p>
-      </div>
-    </form>
-  </div>    
-      
-  
-</body>
+    </header>
+    <h1>#TSO.M</h1>
+  </body>
 </html>
