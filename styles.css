@@ -732,6 +732,34 @@ h1 {
   background-color: #C13584;
 }
 
+/* CSS FOR THE FOOTER*/
+
+footer {																									
+background-color:#0f044c;																									
+padding: 2rem;																									
+text-align: center;																									
+color: white;																									
+border-top: 1px solid var(--border-color);																									
+}																									
+																									
+.social-links {																									
+display: flex;																									
+justify-content: center;																									
+gap: 1.5rem;																									
+margin: 1.5rem 0;																									
+}																									
+																									
+.social-links a {																									
+color: var(--text-secondary);																									
+font-size: 1.5rem;																									
+}																									
+																									
+.social-links a:hover {																									
+color: var(--accent-color);																									
+}															
+
+
+
 /* RESPONSIVE DESIGN */
 @media screen and (max-width: 768px) {
   .navbar {
