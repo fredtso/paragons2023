@@ -15,7 +15,7 @@
 																									
 .dark-theme {																									
 /* Dark theme */																									
---bg-primary: #121212;																									
+--bg-primary: #1a034e;																									
 --bg-secondary: #1e1e1e;																									
 --text-primary: #f8f9fa;																									
 --text-secondary: #adb5bd;																									
@@ -144,7 +144,7 @@ max-width: 1200px;
 margin: 0 auto;																									
 padding: 0 2rem;																									
 }																									
-																		
+															
 .gallery {																									
 display: grid;																									
 grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));																									
